@@ -1,0 +1,1 @@
+grant all privileges on bama.* to bama@localhost identified by 'titok';
