@@ -1,0 +1,8 @@
+-- database: ..\database.sqlite
+
+create table employees(
+    id integer primary key autoincrement ,
+    name text,
+    city text,
+    salary integer
+);
