@@ -6,3 +6,5 @@ create table employees(
     city text,
     salary integer
 );
+
+drop table employees;

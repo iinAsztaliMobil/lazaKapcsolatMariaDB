@@ -1,5 +1,7 @@
 -- database: ..\database.sqlite
 
+delete from employees;
+
 INSERT INTO employees (name, city, salary) VALUES
 ('Alice Smith', 'New York', 75000),
 ('Bob Jones', 'Los Angeles', 68000),
