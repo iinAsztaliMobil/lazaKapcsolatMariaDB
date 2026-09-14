@@ -11,7 +11,7 @@ public class DataService {
         this.db = db;
     }
 
-     public ArrayList<Employee> getEmployees(){
+    public ArrayList<Employee> getEmployees(){
         try {
             return tryGetEmployees();
         } catch (Exception e) {
@@ -20,12 +20,11 @@ public class DataService {
         }
      }
 
-    public ArrayList<Employee> tryGetEmployees() throws Exception{
+    private ArrayList<Employee> tryGetEmployees() throws Exception{
         ArrayList<Employee> empList = new ArrayList<>();
 
-        //feltoltes
         Connection con = db.connect();
-        System.out.println("connection secure!");
+        // System.out.println("connection secure!");
         String sql = "select * from employees";
 
         Statement stmt = con.createStatement();
@@ -40,5 +39,7 @@ public class DataService {
             empList.add(emp);
         }
         return empList;
+        
     }
+
 }
