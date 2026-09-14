@@ -38,6 +38,7 @@ public class DataService {
             Employee emp = new Employee(name, city, salary);
             empList.add(emp);
         }
+        con.close();
         return empList;
         
     }
